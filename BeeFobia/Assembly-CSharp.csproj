@@ -47,6 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>4.8.2.0</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>2019.4.17f1</UnityVersion>
@@ -63,7 +64,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BeeMovement.cs" />
     <Compile Include="Assets\Scripts\FirstPerson.cs" />
+    <Compile Include="Assets\Scripts\PetTrigger.cs" />
+    <Compile Include="Assets\Scripts\PettingBehaviour.cs" />
     <Compile Include="Assets\Scripts\beeLookAt.cs" />
     <Compile Include="Assets\Scripts\floatTheBee.cs" />
     <None Include="Assets\Rin New 3d - Anime Style\Advance Unlit Shader\Advance Unlit.shader" />
@@ -252,7 +256,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:/Users/papuci/Documents/VR/BeeFobiaHelper/BeeFobia/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -600,31 +604,31 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/papuci/Documents/VR/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/papuci/Documents/VR/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/papuci/Documents/VR/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/papuci/Documents/VR/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/papuci/Documents/VR/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/papuci/Documents/VR/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/papuci/Documents/VR/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/papuci/Documents/VR/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/papuci/Documents/VR/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
