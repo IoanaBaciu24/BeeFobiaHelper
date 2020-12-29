@@ -20,7 +20,7 @@ public class FirstPerson : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		bool forward = Input.GetKey(KeyCode.UpArrow);
+		bool forward = isMoving();
 		bool isWalking = animator.GetBool("isWalking");
 		//animation trggers movement
 		if (!isWalking && forward)
@@ -28,11 +28,20 @@ public class FirstPerson : MonoBehaviour
 		if (isWalking && !forward)
 			animator.SetBool("isWalking", false);
 
+		if (!isWalking && forward && animator.GetBool("isPetting"))
+			animator.SetBool("isPetting", false);
+
 		//actual movement + rotations
 		Rigid.MoveRotation(Rigid.rotation * Quaternion.Euler(new Vector3(0, Input.GetAxis("Mouse X") * MouseSensitivity, 0)));
 		Rigid.MovePosition(transform.position + (transform.forward * Input.GetAxis("Vertical") * MoveSpeed) + (transform.right * Input.GetAxis("Horizontal") * MoveSpeed));
 		if (Input.GetKeyDown("space"))
 			Rigid.AddForce(transform.up * JumpForce);
 	}
+
+
+	bool isMoving()
+    {
+		return Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow);
+    }
 
 }

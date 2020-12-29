@@ -23,9 +23,9 @@ public class beeLookAt : MonoBehaviour
 
 		//transform.LookAt(target);
 		transform.rotation = Quaternion.LookRotation(target.position, Vector3.up);
-		transform.Rotate(0.0f, 90.0f, 0.0f);
-		
+        transform.Rotate(0.0f, 90.0f, 0.0f);
 
-		//transform.position = target.position + new Vector3(3f, transform.position.y - target.position.y, 3f);
-	}
+
+        //transform.position = target.position + new Vector3(3f, transform.position.y - target.position.y, 3f);
+    }
 }
