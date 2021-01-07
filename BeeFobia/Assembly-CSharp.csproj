@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\PetTrigger.cs" />
     <Compile Include="Assets\Scripts\beeLookAt.cs" />
     <Compile Include="Assets\Scripts\floatTheBee.cs" />
+    <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
     <None Include="Assets\Rin New 3d - Anime Style\Advance Unlit Shader\Advance Unlit.shader" />
     <None Include="Assets\Rin New 3d - Anime Style\ReadMe!.txt" />
     <Reference Include="UnityEngine">
@@ -629,6 +630,12 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TerrainTools">
+      <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TerrainTools.Editor">
+      <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
