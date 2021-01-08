@@ -626,6 +626,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TerrainTools">
+      <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -647,14 +650,11 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TerrainTools">
-      <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TerrainTools.Editor">
       <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>D:/Facultate/Sem 1/VR/LabFinal/BeeFobiaHelper/BeeFobia/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
