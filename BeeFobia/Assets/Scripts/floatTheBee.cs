@@ -5,6 +5,7 @@ using UnityEngine;
 public class floatTheBee : MonoBehaviour
 {
 	bool floatup;
+	public float howMuch = 0.6f;
 
 	// Use this for initialization
 	void Start()
@@ -24,14 +25,14 @@ public class floatTheBee : MonoBehaviour
 
 	IEnumerator floatingup()
 	{
-		var new_vec = new Vector3(transform.position.x, transform.position.y + 0.6f * Time.deltaTime, transform.position.z);
+		var new_vec = new Vector3(transform.position.x, transform.position.y + howMuch * Time.deltaTime, transform.position.z);
 		transform.position = new_vec;
 		yield return new WaitForSeconds(1);
 		floatup = false;
 	}
 	IEnumerator floatingdown()
 	{
-		var new_vec = new Vector3(transform.position.x, transform.position.y - 0.6f * Time.deltaTime, transform.position.z);
+		var new_vec = new Vector3(transform.position.x, transform.position.y - howMuch * Time.deltaTime, transform.position.z);
 		transform.position = new_vec;
 		yield return new WaitForSeconds(1);
 		floatup = true;

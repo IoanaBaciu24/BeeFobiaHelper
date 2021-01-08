@@ -6,7 +6,7 @@ public class FirstPerson : MonoBehaviour
 {
 	public Rigidbody Rigid;
 	float MouseSensitivity = 1f;
-	float MoveSpeed = 0.09f;
+	float MoveSpeed = 0.7f;
 	float JumpForce = 2f;
 	Animator animator;
 
