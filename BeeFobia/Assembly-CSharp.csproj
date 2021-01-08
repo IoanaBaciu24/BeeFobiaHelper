@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Bzz.cs" />
     <Compile Include="Assets\Scripts\FirstPerson.cs" />
     <Compile Include="Assets\Scripts\PetTrigger.cs" />
+    <Compile Include="Assets\Scripts\WanderAroundHive.cs" />
     <Compile Include="Assets\Scripts\WanderBehaviour.cs" />
     <Compile Include="Assets\Scripts\beeLookAt.cs" />
     <Compile Include="Assets\Scripts\floatTheBee.cs" />
