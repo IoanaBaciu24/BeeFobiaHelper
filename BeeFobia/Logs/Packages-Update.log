@@ -66,3 +66,11 @@ The following packages were added:
   com.unity.multiplayer-hlapi@1.0.6
   com.unity.purchasing@2.2.1
   com.unity.xr.legacyinputhelpers@2.1.6
+
+=== Sat Jan  9 15:42:05 2021
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.render-pipelines.universal@7.3.1
