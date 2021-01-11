@@ -25,11 +25,14 @@ public class BeeMovement : MonoBehaviour
             Move();
 
         if (moving && transform.position.x == target_for_movement.transform.position.x && transform.position.z == target_for_movement.transform.position.z)
+        {
             moving = false;
+            //transform.rotation = Quaternion.LookRotation(target.position, Vector3.up);
+        }
     }
     void Move()
     {
         var new_vec = new Vector3(target_for_movement.transform.position.x, transform.position.y, target_for_movement.transform.position.z);
-        transform.position = Vector3.MoveTowards(transform.position, new_vec, 0.07f);
+        transform.position = Vector3.MoveTowards(transform.position, new_vec, 0.2f);
     }
 }

@@ -11,7 +11,7 @@ public class BeeBehaviourPet : MonoBehaviour
     public GameObject rin;
     public GameObject bee;
     Animator animator;
-    bool rotated = false;
+    //bool rotated = false;
     void Start()
     {
         isPet = false;
@@ -27,47 +27,46 @@ public class BeeBehaviourPet : MonoBehaviour
             GetComponent<beeLookAt>().enabled = false;
             GetComponent<BeeMovement>().enabled = false;
             GetComponent<floatTheBee>().enabled = false;
-            transform.position = new Vector3(transform.position.x, 4.11f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, 3.38f, transform.position.z);
             isPet = true;
         }
 
         if(!animator.GetBool("isPetting"))
         {
-            print("ALO BRE");
             GetComponent<beeLookAt>().enabled = true;
 
             GetComponent<BeeMovement>().enabled = true;
             GetComponent<floatTheBee>().enabled = true;
 
             isPet = false;
-            rotated = false;
+            //rotated = false;
         }
 
         if(isPet)
         {
             //transform.rotation.Set(0.05f, 0.0f, 0.0f, 0.0f);
             
-            if(!rotated)
-            {
-                transform.Rotate(360.0f, 0.0f, 0.0f);
-                rotated = true;
-            }
+            //if(!rotated)
+            //{
+            //    transform.Rotate(360.0f, 0.0f, 0.0f);
+            //    rotated = true;
+            //}
             if (goUp)
             {
-                transform.Rotate(Vector3.right, Time.deltaTime * 45);
+                transform.Rotate(Vector3.right, Time.deltaTime * 30f);
             }
 
             if(!goUp)
             {
-                transform.Rotate(Vector3.left, Time.deltaTime * 45f);
+                transform.Rotate(Vector3.left, Time.deltaTime * 30f);
 
             }
-            if (transform.rotation.x >= 0.1f && goUp)
+            if (transform.rotation.x >= 0.04f && goUp)
             {
                 goUp = false;
                 return;
             }
-            if (transform.rotation.x <= -0.1f && !goUp)
+            if (transform.rotation.x <= -0.04f && !goUp)
             {
                 goUp = true;
                 return;

@@ -7,8 +7,6 @@ public class beeLookAt : MonoBehaviour
 
 
 	public Transform target;
-	public GameObject target_for_movement;
-	public bool moving;
 
 	// Use this for initialization
 	void Start()

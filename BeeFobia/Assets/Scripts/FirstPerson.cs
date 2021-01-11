@@ -5,8 +5,8 @@ using UnityEngine;
 public class FirstPerson : MonoBehaviour
 {
 	public Rigidbody Rigid;
-	float MouseSensitivity = 1f;
-	float MoveSpeed = 0.7f;
+	float MouseSensitivity = 4f;
+	float MoveSpeed = 0.4f;
 	float JumpForce = 2f;
 	Animator animator;
 
@@ -41,7 +41,7 @@ public class FirstPerson : MonoBehaviour
 
 	bool isMoving()
     {
-		return Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow);
+		return Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d") || Input.GetAxis("Mouse X") != 0;
     }
 
 }
