@@ -33,6 +33,6 @@ public class BeeMovement : MonoBehaviour
     void Move()
     {
         var new_vec = new Vector3(target_for_movement.transform.position.x, transform.position.y, target_for_movement.transform.position.z);
-        transform.position = Vector3.MoveTowards(transform.position, new_vec, 0.2f);
+        transform.position = Vector3.MoveTowards(transform.position, new_vec, 0.29f);
     }
 }
