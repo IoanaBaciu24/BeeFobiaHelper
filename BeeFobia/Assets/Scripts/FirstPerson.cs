@@ -6,7 +6,7 @@ public class FirstPerson : MonoBehaviour
 {
 	public Rigidbody Rigid;
 	float MouseSensitivity = 4f;
-	float MoveSpeed = 0.4f;
+	public float MoveSpeed = 0.4f;
 	float JumpForce = 2f;
 	Animator animator;
 
@@ -42,6 +42,14 @@ public class FirstPerson : MonoBehaviour
 	bool isMoving()
     {
 		return Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d") || Input.GetAxis("Mouse X") != 0;
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name != "plate")
+        {
+            Rigid.velocity = Vector3.zero;
+        }
     }
 
 }
